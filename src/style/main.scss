@@ -38,4 +38,9 @@ $textColor: #1A1A1A;
         @include mainFont(Roboto, normal, normal, 14px, 16px, #666666);
     }
 }
+.phoneNumber {
+    p {
+        @include mainFont(Roboto, normal, 500, 22px, 26px, $textColor)
+    }
+}
 
