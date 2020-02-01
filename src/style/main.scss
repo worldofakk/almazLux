@@ -1,0 +1,19 @@
+@mixin  mainFont ($font-family, $font-style, $font-weight, $font-size, $line-height, $color) {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+$hoverColor: #003CB2;
+$textColor: #1A1A1A;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
