@@ -12,28 +12,46 @@
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
+      grid-template-areas: "logo location phoneNumber" "logo Nav callBack";
+  margin-top: 25px;
+}
+
+.logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: logo;
 }
 
 .location {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: location;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
 }
 
-.location .location--point {
+.location .location--png {
   background: url(/src/img/map-pin1.png) no-repeat center;
   width: 18px;
   height: 18px;
 }
 
-.location .location-text {
+.location .location--text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: #666666;
+}
+
+.phoneNumber {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: phoneNumber;
 }
 
 .phoneNumber p {
@@ -43,5 +61,66 @@
   font-size: 22px;
   line-height: 26px;
   color: #1A1A1A;
+}
+
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: Nav;
+}
+
+nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1A1A1A;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #0055FF;
+}
+
+nav ul li:first-child {
+  margin-left: 0px;
+}
+
+.callBack {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: callBack;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.callBack .callBack--png {
+  background: url(/src/img/phone-incoming1.png) no-repeat center;
+  width: 18px;
+  height: 18px;
+}
+
+.callBack .callBack--text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #003CB2;
+  letter-spacing: 0.02em;
 }
 /*# sourceMappingURL=main.css.map */

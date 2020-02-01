@@ -22,25 +22,66 @@ $textColor: #1A1A1A;
     max-width: 1170px;
     margin: 0 auto;
     display: grid;
-    // grid-template-areas: "logo location phoneNumber"
-    //                      "logo nav callBack";
+    grid-template-areas: "logo location phoneNumber"
+                         "logo Nav callBack";
+    margin-top: 25px;
 }
-
+.logo {
+    grid-area: logo;
+}
 .location {
+    grid-area: location;
     display: grid;
     grid-template-columns: auto auto;
-    .location--point {
+    .location--png {
         background: url(/src/img/map-pin1.png) no-repeat center;
         width: 18px;
         height: 18px;
     }
-    .location-text {
+    .location--text {
         @include mainFont(Roboto, normal, normal, 14px, 16px, #666666);
     }
 }
 .phoneNumber {
+    grid-area: phoneNumber;
     p {
         @include mainFont(Roboto, normal, 500, 22px, 26px, $textColor)
     }
 }
 
+nav { 
+    grid-area: Nav;
+    ul {
+        display: inline-flex;
+        li {
+            margin-left: 30px;
+            a {
+                @include mainFont (Roboto, normal, normal, 14px, 16px, $textColor);
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+            }
+            a:hover {
+                color: #0055FF;
+            }
+        }
+        li:first-child {
+            margin-left: 0px;
+        }
+    }
+    
+}
+
+.callBack {
+    grid-area:  callBack;
+    display: grid;
+    grid-template-columns: auto auto;
+    .callBack--png {
+        background: url(/src/img/phone-incoming1.png) no-repeat center;
+        width: 18px;
+        height: 18px;
+    }
+    .callBack--text {
+        @include mainFont(Roboto, normal, 500, 14px, 16px, $hoverColor);
+        letter-spacing: 0.02em;
+    }
+}
