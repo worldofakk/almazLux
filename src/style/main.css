@@ -37,6 +37,9 @@
   background: url(/src/img/map-pin1.png) no-repeat center;
   width: 18px;
   height: 18px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 10px;
 }
 
 .location .location--text {
@@ -67,6 +70,7 @@ nav {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: Nav;
+  margin-top: 15px;
 }
 
 nav ul {
@@ -106,12 +110,16 @@ nav ul li:first-child {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+  margin-top: 15px;
 }
 
 .callBack .callBack--png {
   background: url(/src/img/phone-incoming1.png) no-repeat center;
   width: 18px;
   height: 18px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 10px;
 }
 
 .callBack .callBack--text {

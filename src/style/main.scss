@@ -37,9 +37,12 @@ $textColor: #1A1A1A;
         background: url(/src/img/map-pin1.png) no-repeat center;
         width: 18px;
         height: 18px;
+        justify-self: end;
+        margin-right: 10px;
     }
     .location--text {
         @include mainFont(Roboto, normal, normal, 14px, 16px, #666666);
+        
     }
 }
 .phoneNumber {
@@ -51,6 +54,7 @@ $textColor: #1A1A1A;
 
 nav { 
     grid-area: Nav;
+    margin-top: 15px;
     ul {
         display: inline-flex;
         li {
@@ -75,10 +79,13 @@ nav {
     grid-area:  callBack;
     display: grid;
     grid-template-columns: auto auto;
+    margin-top: 15px;
     .callBack--png {
         background: url(/src/img/phone-incoming1.png) no-repeat center;
         width: 18px;
         height: 18px;
+        justify-self: end;
+        margin-right: 10px;
     }
     .callBack--text {
         @include mainFont(Roboto, normal, 500, 14px, 16px, $hoverColor);
