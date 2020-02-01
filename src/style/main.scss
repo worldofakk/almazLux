@@ -14,6 +14,28 @@ $textColor: #1A1A1A;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
+.headerWrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    // grid-template-areas: "logo location phoneNumber"
+    //                      "logo nav callBack";
+}
+
+.location {
+    display: grid;
+    grid-template-columns: auto auto;
+    .location--point {
+        background: url(/src/img/map-pin1.png) no-repeat center;
+        width: 18px;
+        height: 18px;
+    }
+    .location-text {
+        @include mainFont(Roboto, normal, normal, 14px, 16px, #666666);
+    }
+}
 

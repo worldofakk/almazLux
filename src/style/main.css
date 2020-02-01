@@ -3,5 +3,36 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.headerWrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+.location {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.location .location--point {
+  background: url(/src/img/map-pin1.png) no-repeat center;
+  width: 18px;
+  height: 18px;
+}
+
+.location .location-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
 }
 /*# sourceMappingURL=main.css.map */
