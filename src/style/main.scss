@@ -21,10 +21,13 @@ $textColor: #1A1A1A;
 .headerWrapper {
     max-width: 1170px;
     margin: 0 auto;
+    
+}
+.firstHeader{
     display: grid;
     grid-template-areas: "logo location phoneNumber"
                          "logo Nav callBack";
-    margin-top: 25px;
+    padding-top: 25px;
 }
 .logo {
     grid-area: logo;
@@ -91,4 +94,9 @@ nav {
         @include mainFont(Roboto, normal, 500, 14px, 16px, $hoverColor);
         letter-spacing: 0.02em;
     }
+}
+header {
+    background: url(/src/img/firstScreen.png) no-repeat center;
+    width: 100%;
+    height: 830px;
 }
