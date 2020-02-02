@@ -11,9 +11,8 @@ closeSpan.onclick = function() {
     modal.style.display  = "none"
 }
 
-window.onclick = function (even) {
-    if (event.target == modal) {
+document.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 27) {
         modal.style.display  = "none"
     }
-}
-
+  });
