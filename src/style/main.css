@@ -189,8 +189,8 @@ header {
   opacity: 1;
   display: none;
   position: relative;
-  top: -368px;
-  left: 400px;
+  top: -51vh;
+  left: 50vh;
 }
 
 .showModal .text-content {
