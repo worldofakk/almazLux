@@ -36,19 +36,43 @@
                 <p class="callBack--text">Перезвонить вам?</p>
             </div>
          </div>
-        </div>
+        
         <div class="secondHeader">
             <div class="secondHeader-title-block">
                 <h1 class="title">
-                    Оптовая продажа<br> и контрактное производство<br> зеркал для России и Европы
+                    Оптовая продажа<br> и контрактное производство<br> <b>зеркал для России и Европы</b>
                 </h1>
                 <p class="text">
                     Бесплатная доставка при заказе на сумму более 50 000 рублей!
                 </p>
-                <button id="modalShow">Узнать подробности</button>
+                <button id="modalShow" class="showButton">Узнать подробности</button>
             </div>
+
+            <div class="showModal" id="callbackModal">
+                <div class="text-content">
+                    
+                    <h2 class="modal--title">
+                        Консультация
+                    </h2>
+                    <p class="modal--text">
+                        Оставьте контактные данные и<br> наш специалист перезвонит<br> в удобное для Вас время!
+                    </p>
+                    <img src="/src/img/girl.png" alt="girl">
+                    <div class="close">&times;</div>
+                    <form action="#" class="modal--input">
+                        <input type="text" value="ИМЯ">
+                        <input type="text" value="+375">
+                        <input type="text" value="Когда перезвонить?">
+                    </form>
+                    <button class="modal--button">Отправить заявку</button>
+                </div>
+            </div>
+            
         </div>
+    </div>
     </header>
     
+
+    <script src="/src/js/index.js"></script>
 </body>
 </html>

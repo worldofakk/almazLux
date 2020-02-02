@@ -16,12 +16,12 @@ $textColor: #1A1A1A;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    outline: none;
 }
 
 .headerWrapper {
     max-width: 1170px;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 .firstHeader{
     display: grid;
@@ -99,4 +99,89 @@ header {
     background: url(/src/img/firstScreen.png) no-repeat center;
     width: 100%;
     height: 830px;
+}
+
+.secondHeader {
+    margin-top: 159px;
+    .secondHeader-title-block {
+        .title {
+            @include mainFont(Roboto, normal, 300, 48px, 56px, $textColor);
+        }
+        .text {
+            margin-top: 25px;
+            @include mainFont(Roboto, normal, normal, 16px, 19px, $textColor);
+        }
+        .showButton {
+            margin-top: 30px;
+            background: #003CB3;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+            @include mainFont(Roboto, normal, 500, 14px, 16px, #ffffff);
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            padding: 14px 28px 14px 28px;
+        }
+    }
+}
+
+.showModal {
+    width: 370px;
+    height: 454px;
+    border: 1px solid rgba(131, 126, 126, 0);
+    background-color: #ffffff;
+    opacity: 1;
+    display: none;
+    position: relative;
+    top: -368px;
+    left: 435px;
+    .text-content {
+        position: relative;
+        margin-top: 38px;
+        margin-left: 50px;
+        .modal--title {
+            @include mainFont(Roboto, normal, 500, 32px, 37px, $textColor);
+        }
+        .modal--text {
+            @include mainFont(Roboto, normal, normal, 14px, 21px, $textColor);
+            margin-top: 14px;
+            padding-bottom: 15px;
+        }
+        img {
+            position: absolute;
+            left: 215px;
+            top: -4px;
+        }
+        .close {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: -100px;
+            left: 345px;
+            font-size: 50px;
+        }
+        .modal--input {
+            display: grid;
+            grid-template-rows: auto auto auto;
+                input {
+                    @include mainFont(Roboto, normal, 500, 14px, 16px, #B3B3B3);
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    width: 200px;
+                    height: 40px;
+                    padding-left: 15px;
+                    margin-top: 15px;
+                }
+                input:focus {
+                    color: #1A1A1A;
+                    border: 1px solid #003CB2;
+                }
+        }
+        .modal--button {
+            background-color: $hoverColor;
+            @include mainFont(Roboto, normal, 500, 14px, 16px, #ffffff);
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            padding: 14px 29px 14px 29px;
+            margin-top: 15px;
+        }
+    }
 }
