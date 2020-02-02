@@ -274,4 +274,41 @@ header {
   padding: 14px 29px 14px 29px;
   margin-top: 15px;
 }
+
+.reason {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  width: 528px;
+  margin-top: 67px;
+}
+
+.reason p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1A1A1A;
+  margin-top: 20px;
+}
+
+.reason .reason-world .world {
+  background: url(/src/img/basic-world1.png) no-repeat center;
+  width: 32px;
+  height: 32px;
+}
+
+.reason .reason-layout .layout {
+  background: url(/src/img/software-layers21.png) no-repeat center;
+  width: 32px;
+  height: 32px;
+}
+
+.reason .reason-todo .todo {
+  background: url(/src/img/basic-elaboration-todolist-check1.png) no-repeat center;
+  width: 32px;
+  height: 32px;
+}
 /*# sourceMappingURL=main.css.map */

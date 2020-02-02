@@ -185,3 +185,38 @@ header {
         }
     }
 }
+
+.reason {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 528px;
+    margin-top: 67px;
+    p {
+        @include mainFont(Roboto, normal, 500, 14px, 18px, $textColor);
+        margin-top: 20px;
+    }
+    .reason-world {
+        .world {
+            background: url(/src/img/basic-world1.png) no-repeat center;
+            width: 32px;
+            height: 32px;
+        }
+        
+    }
+    .reason-layout {
+        .layout {
+            background: url(/src/img/software-layers21.png) no-repeat center;
+            width: 32px;
+            height: 32px;
+        }
+
+    }
+    .reason-todo {
+        .todo {
+            background: url(/src/img/basic-elaboration-todolist-check1.png) no-repeat center;
+            width: 32px;
+            height: 32px; 
+        }
+
+    }
+}
